@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1445772849 source:c:\users\user\desktop\bantas(g)\info\cursuri\15.10.2015\tema\nrcuv\main.cpp
+	<cstdio>
+	<cstring>
+	<cctype>
+

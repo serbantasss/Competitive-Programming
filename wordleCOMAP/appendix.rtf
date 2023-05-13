@@ -1,0 +1,39 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19580\viewh8860\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 7.1.\
+S = percentage of short games\
+L = percentage of long games\
+\
+DiffLevel = observed difficulty level scale based on people\'92s performance\
+\
+W = a word\
+\
+W(i) = letter at position I \'een W\
+\
+L(W) = length of W\
+\
+F_L(ch, pos) = frequency of a letter CH at position POS\
+\
+FreqSum = sum from I to L(W) of F_L(W[I], i)\
+\
+\pard\pardeftab720\qj\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+F_W (W) = frequency of W (logarithmic scale 1 to 8), extracted from Google Books Ngrams and \'a0Google Books Syntactic Ngrams.\
+\
+DLet = weight of words with 2 identical letters at positions pos1 and pos2 \'a0(default 1.0) \
+	=prod (2 - F_L(ch, pos1)) * (2 - F_L(ch,pos2)) where w(pos1) = w(pos2) \
+\
+\pard\pardeftab720\qj\partightenfactor0
+\cf2 Here prod = the production sign, because we can have more than 2 sets of double letters\
+\pard\pardeftab720\qj\partightenfactor0
+\cf2 \
+TLet = weight of words with 3 identical letters at positions pos1, pos2 and pos3 (default 1.0)\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 = prod (2 - F_L(ch, pos1)) * (2 - F_L(ch,pos2)) * (2 - F_L(ch,pos3)) \'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 where w(pos1)=w(pos2)=w(pos3) \
+Here prod is the same, but with no reason other than to streamline the code\
+}

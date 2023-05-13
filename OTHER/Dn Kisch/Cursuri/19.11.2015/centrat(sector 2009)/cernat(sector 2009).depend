@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1447951141 source:c:\users\user\desktop\19.11.2015\cernat(sector 2009)\main.cpp
+	<cstdio>
+	<cstring>
+	<cctype>
+

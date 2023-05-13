@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1449397860 source:c:\users\user\desktop\bantas(g)\info\scoala\09.12.2015\betisoare\main.cpp
+	<fstream>
+	<cstring>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1476118695 source:c:\users\user\desktop\bantas(g)\info\dn kisch\cursuri\10.10.2016\stergerevocale\main.cpp
+	<cstdio>
+	<cstring>
+	<cctype>
+

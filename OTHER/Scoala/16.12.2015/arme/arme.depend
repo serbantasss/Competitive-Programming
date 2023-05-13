@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1450202336 source:c:\users\user\desktop\bantas(g)\info\scoala\16.12.2015\arme\main.cpp
+	<iostream>
+	<fstream>
+

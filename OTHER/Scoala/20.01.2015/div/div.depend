@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1453048685 source:c:\users\user\desktop\bantas(g)\info\scoala\20.01.2015\div\main.cpp
+	<fstream>
+	<cmath>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "punct_interior_dreptunghi(DREPT, POINT):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "P.y-D.st.y">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "aria_triunghi_directionat(a,b,c)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "verif(int, int, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "panta(v[1],v[5])">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

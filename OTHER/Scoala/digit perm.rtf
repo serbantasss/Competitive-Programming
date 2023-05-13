@@ -1,0 +1,162 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red253\green143\blue63;\red31\green31\blue36;\red252\green106\blue93;
+\red255\green255\blue255;\red252\green95\blue163;\red208\green168\blue255;\red65\green161\blue192;\red208\green191\blue105;
+\red161\green103\blue230;\red103\green183\blue164;\red208\green191\blue105;}
+{\*\expandedcolortbl;;\csgenericrgb\c99131\c56076\c24611;\csgenericrgb\c12054\c12284\c14131;\csgenericrgb\c98912\c41558\c36568;
+\csgenericrgb\c100000\c100000\c100000\c85000;\csgenericrgb\c98839\c37355\c63833;\csgenericrgb\c81681\c65692\c99927;\csgenericrgb\c25490\c63137\c75294;\csgenericrgb\c81498\c74939\c41233;
+\csgenericrgb\c63137\c40392\c90196;\csgenericrgb\c40538\c71705\c64209;\csgenericrgb\c81569\c74902\c41177;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab741
+\pard\tx741\pardeftab741\pardirnatural\partightenfactor0
+
+\f0\fs30 \cf2 \cb3 #include \cf4 <iostream>\cf5 \
+\cf2 #include \cf4 <cstdio>\cf5 \
+\
+
+\f1\b \cf6 using
+\f0\b0 \cf5  
+\f1\b \cf6 namespace
+\f0\b0 \cf5  \cf7 std\cf5 ;\
+\
+
+\f1\b \cf6 char
+\f0\b0 \cf5  \cf8 str\cf5 [\cf9 200005\cf5 ]=\{\cf9 0\cf5 \};\
+
+\f1\b \cf6 long
+\f0\b0 \cf5  \cf8 have\cf5 [\cf9 10\cf5 ]=\{\cf9 0\cf5 \};\
+
+\f1\b \cf6 long
+\f0\b0 \cf5  \cf8 have2\cf5 [\cf9 10\cf5 ]=\{\cf9 0\cf5 \};\
+
+\f1\b \cf6 long
+\f0\b0 \cf5  \cf8 a\cf5 [\cf9 2000005\cf5 ]=\{\cf9 0\cf5 \};\
+
+\f1\b \cf6 long
+\f0\b0 \cf5  \cf8 b\cf5 [\cf9 2000005\cf5 ]=\{\cf9 0\cf5 \};\
+\
+
+\f1\b \cf6 int
+\f0\b0 \cf5  \cf8 main\cf5 ()\
+\{\
+    
+\f1\b \cf6 long
+\f0\b0 \cf5  i,j;\
+    
+\f1\b \cf6 long
+\f0\b0 \cf5  ans=-\cf9 1\cf5 ;\
+    
+\f1\b \cf6 long
+\f0\b0 \cf5  p=\cf9 0\cf5 ;\
+    
+\f1\b \cf6 long
+\f0\b0 \cf5  o1=\cf9 0\cf5 ;\
+    
+\f1\b \cf6 long
+\f0\b0 \cf5  o2=\cf9 0\cf5 ;\
+    \
+    \cf10 scanf\cf5 (\cf4 "%s"\cf5 ,\cf11 str\cf5 );\
+    
+\f1\b \cf6 for
+\f0\b0 \cf5 (i=\cf9 0\cf5 ;\cf11 str\cf5 [i];i++)\
+    \{\
+        \cf11 have\cf5 [\cf11 str\cf5 [i]-\cf12 '0'\cf5 ]++;\
+        \cf11 have2\cf5 [\cf11 str\cf5 [i]-\cf12 '0'\cf5 ]++;\
+    \}\
+    
+\f1\b \cf6 for
+\f0\b0 \cf5 (i=\cf9 1\cf5 ;i<=\cf9 5\cf5 ;i++)\
+        
+\f1\b \cf6 if
+\f0\b0 \cf5 (\cf11 have\cf5 [i]&&\cf11 have2\cf5 [\cf9 10\cf5 -i])\
+        \{\
+            \cf11 have\cf5 [i]--;\
+            \cf11 have2\cf5 [\cf9 10\cf5 -i]--;\
+            
+\f1\b \cf6 long
+\f0\b0 \cf5  sum=\cf9 1\cf5 ;\
+            
+\f1\b \cf6 for
+\f0\b0 \cf5 (j=\cf9 1\cf5 ;j<=\cf9 8\cf5 ;j++)\
+            \{\
+                sum+=\cf10 min\cf5 (\cf11 have\cf5 [j],\cf11 have2\cf5 [\cf9 9\cf5 -j]);\
+            \}\
+            sum+=\cf10 min\cf5 (\cf11 have\cf5 [\cf9 9\cf5 ],\cf11 have2\cf5 [\cf9 0\cf5 ]);\
+            sum+=\cf10 min\cf5 (\cf11 have\cf5 [\cf9 0\cf5 ],\cf11 have2\cf5 [\cf9 9\cf5 ]);\
+            sum+=\cf10 min\cf5 (\cf11 have\cf5 [\cf9 0\cf5 ]-\cf10 min\cf5 (\cf11 have\cf5 [\cf9 0\cf5 ],\cf11 have2\cf5 [\cf9 9\cf5 ]),\cf11 have2\cf5 [\cf9 0\cf5 ]-\cf10 min\cf5 (\cf11 have\cf5 [\cf9 9\cf5 ],\cf11 have2\cf5 [\cf9 0\cf5 ]));\
+            
+\f1\b \cf6 if
+\f0\b0 \cf5 (sum>ans)\
+                ans=sum,p=i;\
+            \
+            \cf11 have\cf5 [i]++;\
+            \cf11 have2\cf5 [\cf9 10\cf5 -i]++;\
+        \}\
+    
+\f1\b \cf6 if
+\f0\b0 \cf5 (ans==-\cf9 1\cf5 )\
+    \{\
+        
+\f1\b \cf6 for
+\f0\b0 \cf5 (i=\cf9 0\cf5 ;i<=\cf9 9\cf5 ;i++)\
+            
+\f1\b \cf6 for
+\f0\b0 \cf5 (;\cf11 have\cf5 [i];\cf11 have\cf5 [i]--)\
+                \cf11 a\cf5 [o1++]=i,\cf11 b\cf5 [o2++]=i;\
+    \}\
+    
+\f1\b \cf6 else
+\f0\b0 \cf5 \
+    \{\
+        \cf11 have\cf5 [p]--;\
+        \cf11 have2\cf5 [\cf9 10\cf5 -p]--;\
+        
+\f1\b \cf6 for
+\f0\b0 \cf5 (i=\cf9 1\cf5 ;i<=\cf10 min\cf5 (\cf11 have\cf5 [\cf9 0\cf5 ]-\cf10 min\cf5 (\cf11 have\cf5 [\cf9 0\cf5 ],\cf11 have2\cf5 [\cf9 9\cf5 ]),\cf11 have2\cf5 [\cf9 0\cf5 ]-\cf10 min\cf5 (\cf11 have\cf5 [\cf9 9\cf5 ],\cf11 have2\cf5 [\cf9 0\cf5 ]));i++)\
+            \cf11 a\cf5 [o1++]=\cf11 b\cf5 [o2++]=\cf9 0\cf5 ;\
+        \cf11 a\cf5 [o1++]=p;\
+        \cf11 b\cf5 [o2++]=\cf9 10\cf5 -p;\
+        \
+        \cf11 have\cf5 [\cf9 0\cf5 ]-=i-\cf9 1\cf5 ;\
+        \cf11 have2\cf5 [\cf9 0\cf5 ]-=i-\cf9 1\cf5 ;\
+        
+\f1\b \cf6 for
+\f0\b0 \cf5 (i=\cf9 0\cf5 ;i<=\cf9 9\cf5 ;i++)\
+            
+\f1\b \cf6 for
+\f0\b0 \cf5 (;\cf11 have\cf5 [i]&&\cf11 have2\cf5 [\cf9 9\cf5 -i];\cf11 have\cf5 [i]--,\cf11 have2\cf5 [\cf9 9\cf5 -i]--)\
+            \{\
+                \cf11 a\cf5 [o1++]=i;\
+                \cf11 b\cf5 [o2++]=\cf9 9\cf5 -i;\
+            \}\
+        
+\f1\b \cf6 for
+\f0\b0 \cf5 (i=\cf9 0\cf5 ;i<=\cf9 9\cf5 ;i++)\
+            
+\f1\b \cf6 for
+\f0\b0 \cf5 (;\cf11 have\cf5 [i];\cf11 have\cf5 [i]--)\
+                \cf11 a\cf5 [o1++]=i;\
+        
+\f1\b \cf6 for
+\f0\b0 \cf5 (i=\cf9 0\cf5 ;i<=\cf9 9\cf5 ;i++)\
+            
+\f1\b \cf6 for
+\f0\b0 \cf5 (;\cf11 have2\cf5 [i];\cf11 have2\cf5 [i]--)\
+                \cf11 b\cf5 [o2++]=i;\
+    \}\
+    \
+    
+\f1\b \cf6 for
+\f0\b0 \cf5 (i=o1-\cf9 1\cf5 ;i>=\cf9 0\cf5 ;i--)\
+        \cf10 printf\cf5 (\cf4 "%ld"\cf5 ,\cf11 a\cf5 [i]);\
+    \cf10 printf\cf5 (\cf4 "\\n"\cf5 );\
+    
+\f1\b \cf6 for
+\f0\b0 \cf5 (i=o2-\cf9 1\cf5 ;i>=\cf9 0\cf5 ;i--)\
+        \cf10 printf\cf5 (\cf4 "%ld"\cf5 ,\cf11 b\cf5 [i]);\
+    \
+    
+\f1\b \cf6 return
+\f0\b0 \cf5  \cf9 0\cf5 ;\
+\}\
+}

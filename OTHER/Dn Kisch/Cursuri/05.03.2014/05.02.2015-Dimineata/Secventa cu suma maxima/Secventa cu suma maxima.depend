@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1423153548 source:c:\users\adi\desktop\05.02.2015-dimineata\secventa cu suma maxima\main.cpp
+	<fstream>
+	<climits>
+

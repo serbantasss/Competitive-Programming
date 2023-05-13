@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1508862836 source:c:\users\user\desktop\bantas(g)\info\dn kisch\cursuri\24.10.2017\expresie\main.cpp
+	<cstdio>
+	<cstring>
+	<cctype>
+	<vector>
+	<stack>
+	<algorithm>
+

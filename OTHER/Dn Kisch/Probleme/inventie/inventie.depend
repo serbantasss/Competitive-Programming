@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1446656378 source:c:\users\user\desktop\bantas(g)\info\probleme\inventie\main.cpp
+	<fstream>
+	<iostream>
+	<algorithm>
+

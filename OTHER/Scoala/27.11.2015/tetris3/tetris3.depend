@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1448640744 source:c:\users\user\desktop\bantas(g)\info\scoala\27.11.2015\tetris3\main.cpp
+	<fstream>
+	<cstring>
+

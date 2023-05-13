@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1421339418 source:f:\15.01.2015\bubblesort\main.cpp
+	<algorithm>
+	<cstdio>
+	<ctime>
+

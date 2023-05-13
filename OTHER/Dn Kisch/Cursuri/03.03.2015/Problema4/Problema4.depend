@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1425397845 source:c:\users\adi\desktop\03.03.2015\problema4\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1425399148 source:c:\users\adi\desktop\03.03.2015\problema4\main.cpp
+	<cstdio>
+

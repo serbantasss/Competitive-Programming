@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1423155906 source:c:\users\adi\desktop\05.02.2015-dimineata\bloc(campion)\main.cpp
+	<fstream>
+	<climits>
+

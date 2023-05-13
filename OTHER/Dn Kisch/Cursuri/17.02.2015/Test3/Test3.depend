@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1424191324 source:c:\users\adi\desktop\17.02.2015\test3\main.cpp
+	<cstdio>
+	<cctype>
+	<cstring>
+

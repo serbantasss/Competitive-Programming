@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1423596761 source:c:\users\adi\desktop\05.02.2015-dimineata\tema(uvaoj)\686\main.cpp
+	<fstream>
+	<cmath>
+

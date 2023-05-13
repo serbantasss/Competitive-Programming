@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1449518808 source:c:\users\user\desktop\bantas(g)\info\scoala\09.12.2015\panouri\main.cpp
+	<fstream>
+	<iostream>
+

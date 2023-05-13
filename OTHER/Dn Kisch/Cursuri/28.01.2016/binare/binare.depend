@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1454778830 source:c:\users\user\desktop\bantas(g)\info\cursuri\28.01.2016\binare\main.cpp
+	<fstream>
+	<cmath>
+

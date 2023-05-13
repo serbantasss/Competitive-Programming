@@ -1,0 +1,97 @@
+#include <cstdio>
+#include <cstring>
+#include <cctype>
+#include <vector>
+#include <stack>
+#include <string>
+using namespace std;
+vector<int>v;
+stack<int>st;
+string s;
+int rotunda(int k)
+{
+    int maxim, suma;
+    maxim=st[k];
+    suma=st[k]>0?st[k]:0;
+    k--;
+    while(st[k]!=1000)
+    {
+        suma+=st[k] ;
+        if (suma>maxim)
+            maxim = suma;
+        if (suma<0)
+            suma=0;
+        k--;
+    }
+    return maxim;
+}
+int dreapta(int k)
+{
+    int i, nr;
+    i=k ;
+    while (st[i] != 2000) i-- ;
+    sort(st + i + 1, st + k + 1) ;
+    nr = (k + i + 1) / 2 ;
+    k = i ;
+    return st[nr] ;
+}
+int main()
+{
+    freopen("expresie.in","r",stdin);
+    freopen("expresie.out","w",stdout);
+    int n,k,ii,vir,x,nr=0,semn;
+    char ch;
+    scanf("%s",s);
+    n=s.size();
+    ii=0;
+    while(ii<n)
+    {
+        if(s[ii]=='(')
+        {
+            st.push(1000);
+            ii++;
+        }
+        else if (s[ii] == '[')
+        {
+            st.push(2000);
+            ii++ ;
+        }
+        else if (s[ii] == ')')
+        {
+            x=rotunda(k) ;
+            st.top()=x;
+            ii++ ;
+        }
+        else if (s[ii] == ']')
+        {
+
+            x=dreapta(k);
+            st.top()=x;
+            ii++ ;
+        }
+        else if(s[ii]!=',')
+        {
+            semn=1;
+            if (s[ii]=='-')
+            {
+                semn=-1;
+                ii++;
+            }
+            x=semn;
+            while(ii<n && isdigit(s[ii]))
+                x=x*10+(s[ii++]-'0');
+            x=x*semn;
+            st[++k]=x;
+        }
+        else
+            ii++;
+    }
+
+    int suma = 0 ;
+    while(st.empty())
+    {
+        suma+=st.top();
+        st.pop();
+    }
+    printf("%d")
+}

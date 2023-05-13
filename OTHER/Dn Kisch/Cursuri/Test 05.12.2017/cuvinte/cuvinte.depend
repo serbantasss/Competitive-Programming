@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1512488688 source:c:\users\user\desktop\bantas(g)\info\dn kisch\cursuri\test 05.12.2017\cuvinte\main.cpp
+	<cstdio>
+	<string>
+	<cstring>
+	<algorithm>
+	<stack>
+

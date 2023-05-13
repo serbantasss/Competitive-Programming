@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1423404401 source:c:\users\adi\desktop\05.02.2015-dimineata\583\main.cpp
+	<fstream>
+	<cstdlib>
+

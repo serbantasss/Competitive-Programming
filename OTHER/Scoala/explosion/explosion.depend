@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1512760499 source:c:\users\user\desktop\bantas(g)\info\scoala\explosion\main.cpp
+	<cstdio>
+	<cmath>
+	<cstdlib>
+	<algorithm>
+	<vector>
+

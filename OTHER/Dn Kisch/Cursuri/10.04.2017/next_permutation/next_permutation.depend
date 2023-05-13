@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1491838233 source:c:\users\user\desktop\bantas(g)\info\dn kisch\cursuri\10.04.2017\next_permutation\main.cpp
+	<iostream>
+	<algorithm>
+
+1491834694 source:c:\users\asus\desktop\bantas(g)\info\dn kisch\cursuri\10.04.2017\next_permutation\main.cpp
+	<iostream>
+	<algorithm>
+	<functional>
+

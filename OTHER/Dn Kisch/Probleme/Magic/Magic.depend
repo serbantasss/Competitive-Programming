@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1427964728 source:c:\users\adi\desktop\magic\main.cpp
+	<cstdio>
+	<cctype>
+

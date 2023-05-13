@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1475513433 source:c:\users\user\desktop\bantas(g)\info\dn kisch\cursuri\03.10.2016\siruri de caractere 1\main.cpp
+	<cstdio>
+	<cstring>
+	<cctype>
+

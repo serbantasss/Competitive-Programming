@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1431615826 source:f:\probleme site-uri\trapez(infoarena)\main.cpp
+	<cstdio>
+	<cmath>
+	<algorithm>
+

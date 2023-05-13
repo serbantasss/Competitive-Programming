@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1428626779 source:c:\documents and settings\administrator.cygnus-ibm2\desktop\suma\main.cpp
+	<cstdio>
+	<cmath>
+
+1428571266 source:g:\suma\main.cpp
+	<cstdio>
+

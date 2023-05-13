@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1511690855 source:c:\users\user\desktop\bantas(g)\info\dn kisch\cursuri\21.11.2017\sumprod\main.cpp
+	<cstdio>
+	<algorithm>
+	<cstring>
+

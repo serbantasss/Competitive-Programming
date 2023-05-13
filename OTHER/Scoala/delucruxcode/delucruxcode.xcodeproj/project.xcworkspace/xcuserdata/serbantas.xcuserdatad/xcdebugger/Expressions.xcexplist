@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "eval(int, int, int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "f">
+            </PersistentString>
+            <PersistentString
+               value = "expresie[7]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "getZarr(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, int*):main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "verif(int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "viz[t.x+dx[i]][t.y+dy[i]]">
+            </PersistentString>
+            <PersistentString
+               value = "mat[t.x+dx[i]][t.y+dy[i]]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "findmidist(int):main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "B[indb]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "ans">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1536736150 source:c:\users\user\desktop\de lucru\main.cpp
+	<cstdio>
+
+1548668905 source:c:\users\asus\desktop\de lucru\main.cpp
+	<cstdio>
+	<algorithm>
+
+1569958765 source:c:\users\asus\desktop\bantas(g)\info\de lucru\main.cpp
+	<cstdio>
+	<cctype>
+	<cstring>
+

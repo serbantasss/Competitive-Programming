@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1417635756 source:c:\users\octav\desktop\panglica\main.cpp
+	<cstdio>
+	<cctype>
+	<cstring>
+

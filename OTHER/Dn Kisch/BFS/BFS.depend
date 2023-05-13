@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1500652558 source:c:\users\user\desktop\bantas(g)\info\dn kisch\bfs\main.cpp
+	<cstdio>
+	<vector>
+	<queue>
+

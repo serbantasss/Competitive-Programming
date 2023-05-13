@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1428543619 source:c:\documents and settings\administrator.cygnus-ibm2\desktop\labirint\main.cpp
+	<cstdio>
+	<cstring>
+	<queue>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1422299830 source:f:\15.01.2015\generare de sir pt bubble sort\main.cpp
+	<cstdio>
+	<ctime>
+	<cstdlib>
+

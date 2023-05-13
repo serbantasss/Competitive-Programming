@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    if(c>b)
+        if(b>a)
+           cout<<c<<" "<<b<<" "<<a;
+         else
+            cout<<c<<" "<<a<<" "<<b;
+    else
+       if(b>c)
+          if(c>a)
+             cout<<b<<" "<<c<<" "<<a;
+           else
+              cout<<b<<" "<<a<<" "<<c;
+        else 
+            if(a>b)
+               if(b>c)
+                  cout<<a<<" "<<b<<" "<<c;
+               else 
+                  cout
+    return 0;
+}

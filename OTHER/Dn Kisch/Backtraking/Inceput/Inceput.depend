@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1511689747 source:c:\users\user\desktop\bantas(g)\info\dn kisch\backtraking\inceput\main.cpp
+	<cstdio>
+	<algorithm>
+	<cstring>
+

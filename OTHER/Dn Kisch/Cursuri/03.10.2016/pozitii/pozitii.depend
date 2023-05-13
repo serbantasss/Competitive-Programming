@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1475515340 source:c:\users\user\desktop\bantas(g)\info\dn kisch\cursuri\03.10.2016\pozitii\main.cpp
+	<cstdio>
+	<cstring>
+	<cctype>
+

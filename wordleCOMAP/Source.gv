@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<DLET &le; 3.613<br/>entropy = 0.623<br/>samples = 251<br/>value = [39, 212]<br/>class = hard>, fillcolor="#5dafea"] ;
+1 [label=<FreqSum &le; 0.369<br/>entropy = 0.429<br/>samples = 194<br/>value = [17, 177]<br/>class = hard>, fillcolor="#4ca6e7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<FreqSum &le; 0.159<br/>entropy = 0.662<br/>samples = 64<br/>value = [11, 53]<br/>class = hard>, fillcolor="#62b1ea"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = easy>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.631<br/>samples = 63<br/>value = [10, 53]<br/>class = hard>, fillcolor="#5eafea"] ;
+2 -> 4 ;
+5 [label=<FreqSum &le; 0.419<br/>entropy = 0.27<br/>samples = 130<br/>value = [6, 124]<br/>class = hard>, fillcolor="#43a2e6"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 40<br/>value = [0, 40]<br/>class = hard>, fillcolor="#399de5"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.353<br/>samples = 90<br/>value = [6, 84]<br/>class = hard>, fillcolor="#47a4e7"] ;
+5 -> 7 ;
+8 [label=<FreqLang &le; 3.325<br/>entropy = 0.962<br/>samples = 57<br/>value = [22, 35]<br/>class = hard>, fillcolor="#b5dbf5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<FreqSum &le; 0.492<br/>entropy = 1.0<br/>samples = 44<br/>value = [22, 22]<br/>class = easy>, fillcolor="#ffffff"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.996<br/>samples = 41<br/>value = [19, 22]<br/>class = hard>, fillcolor="#e4f2fb"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.0<br/>samples = 3<br/>value = [3, 0]<br/>class = easy>, fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label=<entropy = 0.0<br/>samples = 13<br/>value = [0, 13]<br/>class = hard>, fillcolor="#399de5"] ;
+8 -> 12 ;
+}
