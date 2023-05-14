@@ -1,4 +1,4 @@
-# Install script for directory: /Users/serbanbantas/Desktop/BANTAS(G)/info/LeetCode/testcode
+# Install script for directory: /Users/serbanbantas/Documents/GitHub/Competitive-Programming/LeetCode/testcode
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/serbanbantas/Desktop/BANTAS(G)/info/LeetCode/testcode/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/serbanbantas/Documents/GitHub/Competitive-Programming/LeetCode/testcode/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

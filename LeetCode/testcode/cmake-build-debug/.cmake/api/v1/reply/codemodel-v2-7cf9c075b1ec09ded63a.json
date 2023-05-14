@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/serbanbantas/Desktop/BANTAS(G)/info/LeetCode/testcode/cmake-build-debug",
-		"source" : "/Users/serbanbantas/Desktop/BANTAS(G)/info/LeetCode/testcode"
+		"build" : "/Users/serbanbantas/Documents/GitHub/Competitive-Programming/LeetCode/testcode/cmake-build-debug",
+		"source" : "/Users/serbanbantas/Documents/GitHub/Competitive-Programming/LeetCode/testcode"
 	},
 	"version" : 
 	{
