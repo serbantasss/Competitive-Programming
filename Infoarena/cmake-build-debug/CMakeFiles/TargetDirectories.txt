@@ -1,0 +1,3 @@
+/Users/serbanbantas/Documents/GitHub/Competitive-Programming/Infoarena/cmake-build-debug/CMakeFiles/main.dir
+/Users/serbanbantas/Documents/GitHub/Competitive-Programming/Infoarena/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/serbanbantas/Documents/GitHub/Competitive-Programming/Infoarena/cmake-build-debug/CMakeFiles/rebuild_cache.dir
