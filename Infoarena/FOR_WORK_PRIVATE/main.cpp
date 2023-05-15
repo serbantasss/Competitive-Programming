@@ -1,89 +1,62 @@
-//
-// Created by Serban Bantas on 14.05.2023.
-//
 #include <cstdio>
 #include <vector>
+#include <algorithm>
 #include <stack>
-#include <cstring>
-
-#define NMAX 100000
-
 using namespace std;
-int N, M, nrconex, k;
-stack<int> stv;
-vector<int> adj[2*NMAX+5];
-int nr[2*NMAX+5],parent[2*NMAX+5],comp_conex[2*NMAX+5];
-bool viz[2*NMAX + 5];
 
-int ind(int a){
-    if(a<0)
-        return -a + N;
-    return a;
-}
+vector<int> adc[100005];
+vector<vector<int>> conex_comp;
+int nr[100005], lowlink[100005], nrnod;
+bool instack[100005];
+stack<int> stiva;
 
-int neg(int a){
-    if(a>N)
-        return a-N;
-    return a+N;
-}
-
-void dfs(int nod)
-{
-    nr[nod]=parent[nod]=k++;
-    stv.push(nod);
-    viz[nod] = true;
-    for(int next : adj[nod])
-        if(nr[next] == 0){
-            dfs(next);
-            if(parent[nod] > parent[next])
-                parent[nod] = parent[next];
+void dfs(int nod){
+    nr[nod] = lowlink[nod] = nrnod;
+    //printf("Numbered node %c with number %d.\n", nod+'A'-1, nrnod);
+    nrnod++;
+    stiva.push(nod);
+    instack[nod] = 1;
+    for(int i=0; i<adc[nod].size(); ++i)
+        if(nr[adc[nod][i]] == 0) {
+            dfs(adc[nod][i]);
+            lowlink[nod] = min(lowlink[adc[nod][i]], lowlink[nod]);
+            //printf("Lowlinked node %c with number %d.\n", nod+'A'-1, lowlink[nod]);
+        } else {
+            if (instack[adc[nod][i]])
+                lowlink[nod] = min(lowlink[nod], lowlink[adc[nod][i]]);// printf("Lowlinked node %c with number %d.\n", nod+'A'-1, lowlink[nod]);
         }
-        else
-            if(viz[next] && parent[nod] > parent[next])
-                parent[nod] = parent[next];
-    if(nr[nod]==parent[nod])
-    {
-        int x;
-        nrconex++;
-        do
-        {
-            x=stv.top();
-            comp_conex[x]= nrconex;
-            viz[x] = false;
-            stv.pop();
-        }while(x!=nod);
+    if(lowlink[nod] == nr[nod]){
+        vector<int> prov;
+        int curr;
+        do{
+            curr = stiva.top();
+            prov.push_back(curr);
+            instack[curr] = 0;
+            stiva.pop();
+            printf("Removed node %d from stack and added it to CTC %d.\n", curr,conex_comp.size());
+        }while(curr != nod);
+        conex_comp.push_back(prov);
     }
 }
 int main()
 {
-    freopen("2sat.in","r",stdin);
-    freopen("2sat.out","w",stdout);
-    scanf("%d%d",&N,&M);
-    for(int i=1;i<=M;++i){
-        int x,y;
-        scanf("%d%d",&x,&y);
-        x = ind(x), y = ind(y);
-        adj[neg(x)].push_back(y);
-        adj[neg(y)].push_back(x);
+    freopen("ctc.in","r",stdin);
+    freopen("ctc.out","w",stdout);
+    int n, m, x, y;
+    scanf("%d %d",&n,&m);
+    for(int i=1;i<=m;++i){
+        scanf("%d %d",&x,&y);
+        adc[x].push_back(y);
     }
-    //topological order
-    k = 1;
-    for(int i=1;i<=2*N;++i)
+    nrnod = 1;
+    for(int i=1;i<=n;++i)
         if(nr[i] == 0)
             dfs(i);
-    for(int i=1;i<=2*N;++i)
-        comp_conex[i] = nrconex + 1 - comp_conex[i];
-    memset(nr, 0, N+5);
-    bool ok = 1;
-    for(int i = 1; i <= N && ok; ++i) {
-        if (comp_conex[i] == comp_conex[neg(i)])
-            ok = 0;
-        nr[i] = comp_conex[i] > comp_conex[neg(i)];
+    printf("%d\n", conex_comp.size());
+    for(int i=0;i<conex_comp.size();++i){
+        for(int j=0;j<conex_comp[i].size();++j)
+            printf("%d ",conex_comp[i][j]);
+        printf("\n");
     }
-    if(ok)
-        for(int i=1;i<=N;++i)
-            printf("%d ",nr[i]);
-    else
-        printf("-1");
     return 0;
 }
